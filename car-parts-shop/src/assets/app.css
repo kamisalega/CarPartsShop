@@ -104,7 +104,7 @@ body {
   }
   .start {
     background: #212331;
-    min-height: 100vh;
+    min-height: 90vh;
     color: white;
     align-content: center;
     top: 0px;
@@ -118,7 +118,7 @@ body {
 
   .productContainer{
     background: #303241;
-    min-height: 85vh;
+    min-height: 70vh;
     max-width: 80vw;
     align-content: center;
     margin-left: 10vw;
