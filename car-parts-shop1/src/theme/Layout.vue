@@ -1,22 +1,22 @@
 ﻿<template>
   <div id="app">
-    <NavigationBar />
-    <!--    <router-view />-->
+    <navigation-bar />
+    <router-view />
   </div>
 </template>
 
 <script>
 import NavigationBar from './NavigationBar.vue'
-import './assets/app.css'
 
 export default {
   name: 'Layout',
   components: {
-    NavigationBar
+    'navigation-bar': NavigationBar
   }
 }
 </script>
 <style lang="scss">
+  @import 'assets/styles';
   #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;

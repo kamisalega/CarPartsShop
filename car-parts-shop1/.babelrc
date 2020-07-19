@@ -1,11 +1,12 @@
 ﻿{
   "presets": [
     [
-      "@babel/preset-env",
+      "es2015",
       {
         "modules": false
       }
-    ]
+    ],
+    "stage-2"
   ],
   "ignore": [
     "node_modules/*"
