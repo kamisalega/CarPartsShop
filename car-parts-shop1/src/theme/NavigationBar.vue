@@ -7,39 +7,21 @@
             to="/"
             class="nav-link-header float-left navbar-brand"
           >
-            Start
+            Home
           </router-link>
           <router-link
             to="/Register"
             class="nav-link-header float-left nav-link"
           >
-            Register
-          </router-link>
-        </div>
-        <form class="form-inline">
-          <button
-            class="btn btn-outline-success mr-sm-2"
-            type=""
-          >
             Zarejestruj
-          </button>
-          <input
-            class="form-control mr-sm-2"
-            type="text"
-            placeholder="E-mail"
-          >
-          <input
-            class="form-control mr-sm-2"
-            type="text"
-            placeholder="Hasło"
-          >
-          <button
-            class="btn btn-outline-success my-2 my-sm-0"
-            type="submit"
+          </router-link>
+          <router-link
+            to="/Login"
+            class="nav-link-header float-left nav-link"
           >
             Zaloguj
-          </button>
-        </form>
+          </router-link>
+        </div>
         <form class="form-inline">
           <router-link to="/Basket">
             <button
@@ -90,7 +72,7 @@ export default {
   name: 'NavigationBar',
   data () {
     return {
-      msga: 'tests'
+      msga: 'sprawdzenie'
     }
   }
 }
