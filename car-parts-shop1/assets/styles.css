@@ -198,3 +198,11 @@ body {
     margin-top: 13vh;
     vertical-align: middle;
   }
+
+  .admin-panel{
+    width: 80vw;
+    font-style: white;
+    margin: 160px auto;
+    text-align: center;
+    background: #efefef;
+}
