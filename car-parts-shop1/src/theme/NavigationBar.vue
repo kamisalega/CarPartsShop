@@ -22,6 +22,11 @@
             Zaloguj
           </router-link>
         </div>
+          <router-link
+            to="/AdminPanel"
+            class="nav-link-header float-left nav-link">
+            AdminPanel
+          </router-link>
         <form class="form-inline">
           <router-link to="/Basket">
             <button
