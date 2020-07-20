@@ -1,57 +1,36 @@
 const express = require('express');
+const app = express();
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
+const morgan = require('morgan');
+const api = require('./api/index');
 
-const app = express();
-const db = mongoose.connect('mongodb://localhost/carPartsApi', {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect('mongodb://localhost/carPartsApi'); 
+const db = mongoose.connection;
 
-const partsCarRouter = express.Router();
-const port = process.env.PORT || 3000;
-const CarPart = require('./models/carPart');
+const port = (process.env.PORT || 3000);
 
-
-partsCarRouter.route('/carParts')
-    .post((req, res) => {
-        const carPart = new CarPart(req.body);
-    })
-    .get((req, res) => {
-        console.log(req);
-        const query = {};
-
-        if (req.query.genre) {
-            query.genre = req.query.genre;
-        }
-
-        CarPart.find(query, (err, carParts) => {
-                if (err) {
-                    console.log('Return err: ' + err);
-                    return res.send(err);
-                }
-                return res.json(carParts);
-            }
-        );
-    });
-
-partsCarRouter.route('/carParts/:carPartId')
-    .get((req, res) => {
-        CarPart.findById(req.params.carPartId, (err, carPart) => {
-                if (err) {
-                    console.log('Return err: ' + err);
-                    return res.send(err);
-                }
-                console.log('Return carParts:' + carPart);
-                return res.json(carPart);
-            }
-        );
-    });
+app.set('port', port);
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+console.log(`Kamila ${api}`)
+app.use(express.static('static'));
+app.use(morgan('dev'));
+app.use('/api', api);
+// app.use((req, res, next) => {
+//   const err = new Error('Not Found');
+//   err.status = 404;
+//   res.json(err);
+// });
 
 
-app.use('/api', partsCarRouter);
 
-app.get('/', (req, res) => {
-    res.send('Welcome to my API!');
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function ()  {
+  console.log('Connected to MongoDB');
+
+  app.listen(app.get('port'), function ()  {
+    console.log(`API Server Listening on port ${app.get('port')}!`);
+  });
 });
 
-app.listen(port, () => {
-    console.log(`Running on port ${port}`);
-});

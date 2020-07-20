@@ -23,7 +23,16 @@ const router = new VueRouter({
     path: '/Basket',
     name: 'Basket',
     component: Basket
-  }]
+  }, {
+    path: '/Login',
+    name: 'Login',
+    component: Login
+  }, {
+    path: '/AdminPanel',
+    name: 'AdminPanel',
+    component: AdminPanel
+  }
+  ]
 })
 
 export default router

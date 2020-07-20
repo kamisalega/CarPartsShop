@@ -13,7 +13,7 @@
           aria-describedby="emailHelp"
         >
         <div class="line-box">
-          <div class="line" />
+          <div class="line"/>
         </div>
       </label>
       <label>
@@ -24,7 +24,7 @@
           class="input"
         >
         <div class="line-box">
-          <div class="line" />
+          <div class="line"/>
         </div>
       </label>
       <button
@@ -52,14 +52,44 @@
 </template>
 
 <script>
-export default {
-  name: 'Login',
-  data () {
-    return {
-      msg: 'Logowanie'
+  export default {
+    name: 'Login',
+    data() {
+      return {
+        showAlert: false,
+        message: '',
+        email: '',
+        emailRules: [
+          v => !!v || 'E-mail is required',
+          v => /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(v) || 'E-mail must be valid'
+        ],
+        password: '',
+        passwordRules: [
+          v => !!v || 'Password is required'
+        ]
+      }
+    },
+    computed: {
+      isLoggedIn() {
+        return this.$store.getters.isLoggedIn
+      }
+    },
+    methods: {
+      login: function () {
+        const vm = this
+        const payload = {
+          email: this.email,
+          password: this.password
+        }
+        this.$store.dispatch('logInUser', payload)
+          .then(() => {
+            if(vm.isLoggedIn){
+              this.$router.push({path: '/'})
+            }
+          })
+      }
     }
   }
-}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
