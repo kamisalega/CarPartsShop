@@ -28,8 +28,7 @@
         </div>
       </label>
       <button
-        class="mr-sm-2"
-      >
+        class="mr-sm-2">
         Zaloguj
       </button>
       <router-link to="/Register">
