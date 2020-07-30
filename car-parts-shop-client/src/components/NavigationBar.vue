@@ -4,17 +4,24 @@
     <div class="pos-f-t">
       <nav class="navbar-header navbar navbar-dark bg-dark">
         <div>
-          <router-link to="/" class="nav-link-header float-left navbar-brand">Start</router-link>
-          <router-link to="/Register" class="nav-link-header float-left nav-link">Register
+         <router-link
+            to="/"
+            class="nav-link-header float-left navbar-brand"
+          >
+            Home
           </router-link>
-
+          <router-link
+            to="/Login"
+            class="nav-link-header float-left nav-link"
+          >
+            Zaloguj
+          </router-link>
         </div>
-        <form class="form-inline">
-          <button class="btn btn-outline-success mr-sm-2" type="">Zarejestruj</button>
-          <input class="form-control mr-sm-2" type="text" placeholder="E-mail">
-          <input class="form-control mr-sm-2" type="text" placeholder="Hasło">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Zaloguj</button>
-        </form>
+        <router-link
+            to="/AdminPanel"
+            class="nav-link-header float-left nav-link">
+            AdminPanel
+          </router-link>
         <form class="form-inline">
           <router-link to="/Basket">
             <button class="btn btn-outline-success mr-sm-2" type="">

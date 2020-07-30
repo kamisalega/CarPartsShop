@@ -1,7 +1,7 @@
 <template>
   <div class="register">
     <p class="register-title">
-      {{ msg }}
+      Logowanie
     </p>
     <form class="register-form ">
       <label>
@@ -29,10 +29,17 @@
       </label>
       <button
         class="mr-sm-2"
-        type="submit"
       >
         Zaloguj
       </button>
+      <router-link to="/Register">
+      <button
+        class="mr-sm-2"
+        type="submit"
+      >
+        Zarejestruj
+      </button>
+      </router-link>
       <button
         class="mr-sm-2"
         type="reset"
@@ -52,44 +59,44 @@
 </template>
 
 <script>
-  export default {
-    name: 'Login',
-    data() {
-      return {
-        showAlert: false,
-        message: '',
-        email: '',
-        emailRules: [
-          v => !!v || 'E-mail is required',
-          v => /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(v) || 'E-mail must be valid'
-        ],
-        password: '',
-        passwordRules: [
-          v => !!v || 'Password is required'
-        ]
-      }
+export default {
+  name: 'Login',
+  data() {
+    return {
+      showAlert: false,
+      message: '',
+      email: '',
+      // emailRules: [
+      // v => !!v || 'E-mail is required',
+      // v => /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(v) || 'E-mail must be valid',
+      // ],
+      password: '',
+      passwordRules: [
+      // v => !!v || 'Password is required',
+      ],
+    };
+  },
+  computed: {
+    isLoggedIn() {
+      return this.$store.getters.isLoggedIn;
     },
-    computed: {
-      isLoggedIn() {
-        return this.$store.getters.isLoggedIn
-      }
+  },
+  methods: {
+    login() {
+      const vm = this;
+      const payload = {
+        email: this.email,
+        password: this.password,
+      };
+      this.$store.dispatch('logInUser', payload)
+        .then(() => {
+          if (vm.isLoggedIn) {
+            this.$router.push({ path: '/' });
+          }
+        });
     },
-    methods: {
-      login: function () {
-        const vm = this
-        const payload = {
-          email: this.email,
-          password: this.password
-        }
-        this.$store.dispatch('logInUser', payload)
-          .then(() => {
-            if(vm.isLoggedIn){
-              this.$router.push({path: '/'})
-            }
-          })
-      }
-    }
-  }
+  },
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

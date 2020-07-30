@@ -2,6 +2,7 @@
 
 const parts = {
   carParts: [{
+    id: 1,
     category: 'Elektryka',
     subcategory: 'Akumulator',
     carBrand: 'Alfa Romeo',
@@ -16,6 +17,7 @@ const parts = {
     src: images('./logo.png'),
   },
   {
+    id: 2,
     category: 'Filtr',
     subcategory: 'Filtr oleju',
     carBrand: 'Audi',
@@ -30,6 +32,7 @@ const parts = {
     src: images('./logo.png'),
   },
   {
+    id: 3,
     category: 'Sprzęgło',
     subcategory: 'Sprzęgło kompletne',
     carBrand: 'Lexus',
@@ -44,6 +47,7 @@ const parts = {
     src: images('./logo.png'),
   },
   {
+    id: 4,
     category: 'Silnik',
     subcategory: 'Miska olejowa',
     carBrand: 'Ford',

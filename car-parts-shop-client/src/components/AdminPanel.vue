@@ -88,12 +88,12 @@
 <script>
 export default {
   name: 'AdminPanel',
-  data () {
+  data() {
     return {
-      msg: 'Panel administratora'
-    }
-  }
-}
+      msg: 'Panel administratora',
+    };
+  },
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

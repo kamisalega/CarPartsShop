@@ -5,17 +5,12 @@
         <b-card class="b-card-car-part"
                 :img-src="part.src" img-alt="Image" img-top>
           <hr/>
-          <h3>{{part.carBrand+' '+part.carModel}}</h3>
-          <b-card-text>
-            <h5>Kategoria:</h5>
-            <p>{{part.category}}</p>
-            <h5>Producent:</h5>
-            <p>{{part.manufacturer}}</p>
-            <h5>EAN:</h5>
-            <p>{{part.EAN}}</p>
-            <h5>Cena:</h5>
-            <p>{{part.price}}</p>
-          </b-card-text>
+          <router-link
+          :to="{ name: 'ProductItem',
+          params: {PartId: part.id}
+          }">
+            <h3>{{part.subcategory+' '+part.carBrand+' '+part.carModel}}</h3>
+          </router-link>
         </b-card>
       </div>
     </b-card-group>
