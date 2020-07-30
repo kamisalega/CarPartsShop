@@ -1,40 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="$PROJECT_DIR$" t="IncludeFlat">
-      <e p="car-parts-shop/node_modules/@types" t="IncludeRecursive">
+    <e p="C:\Users\Lenovo\AppData\local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Lenovo\AppData\local\JetBrains\Rider2020.1\resharper-host\local\Transient\ReSharperHost\v201\SolutionCaches\_.19.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Lenovo\AppData\Roaming\JetBrains\Rider2020.1\javascript\extLibs\global-types\node_modules\@types\bson" t="IncludeRecursive" />
+    <e p="C:\Users\Lenovo\AppData\Roaming\JetBrains\Rider2020.1\javascript\extLibs\global-types\node_modules\@types\mongodb" t="IncludeRecursive" />
+    <e p="C:\Users\Lenovo\AppData\Roaming\JetBrains\Rider2020.1\javascript\extLibs\global-types\node_modules\@types\mongoose" t="IncludeRecursive" />
+    <e p="C:\Users\Lenovo\AppData\Roaming\JetBrains\Rider2020.1\javascript\extLibs\global-types\node_modules\@types\node" t="IncludeRecursive" />
+    <e p="C:\Users\Lenovo\Documents\Programowanie\CarPartsShop" t="IncludeFlat">
+      <e p="car-parts-shop\node_modules\@types" t="IncludeRecursive">
         <e p="minimatch" t="IncludeRecursive" />
         <e p="node" t="IncludeRecursive" />
       </e>
-      <e p="car-parts-shop/node_modules/@vue/cli-plugin-babel" t="IncludeRecursive" />
-      <e p="car-parts-shop/node_modules/@vue/cli-plugin-eslint" t="IncludeRecursive" />
-      <e p="car-parts-shop/node_modules/@vue/cli-service" t="IncludeRecursive" />
-      <e p="car-parts-shop/node_modules/@vue/component-compiler-utils" t="IncludeRecursive" />
-      <e p="car-parts-shop/node_modules/@vue/eslint-config-airbnb" t="IncludeRecursive" />
-      <e p="car-parts-shop/node_modules/acorn-walk" t="IncludeRecursive" />
-      <e p="car-parts-shop/node_modules/address" t="IncludeRecursive" />
-      <e p="car-parts-shop/node_modules/babel-eslint" t="IncludeRecursive" />
-      <e p="car-parts-shop/node_modules/chalk" t="IncludeRecursive" />
-      <e p="car-parts-shop/node_modules/cli-highlight" t="IncludeRecursive" />
-      <e p="car-parts-shop/node_modules/commander" t="IncludeRecursive" />
-      <e p="car-parts-shop/node_modules/core-js" t="IncludeRecursive" />
-      <e p="car-parts-shop/node_modules/dotenv" t="IncludeRecursive" />
-      <e p="car-parts-shop/node_modules/dotenv-expand" t="IncludeRecursive" />
-      <e p="car-parts-shop/node_modules/eslint" t="IncludeRecursive" />
-      <e p="car-parts-shop/node_modules/eslint-plugin-import" t="IncludeRecursive" />
-      <e p="car-parts-shop/node_modules/eslint-plugin-vue" t="IncludeRecursive" />
-      <e p="car-parts-shop/node_modules/javascript-stringify" t="IncludeRecursive" />
-      <e p="car-parts-shop/node_modules/portfinder" t="IncludeRecursive" />
-      <e p="car-parts-shop/node_modules/postcss" t="IncludeRecursive" />
-      <e p="car-parts-shop/node_modules/postcss-selector-parser" t="IncludeRecursive" />
-      <e p="car-parts-shop/node_modules/source-map" t="IncludeRecursive" />
-      <e p="car-parts-shop/node_modules/terser" t="IncludeRecursive" />
-      <e p="car-parts-shop/node_modules/vue" t="IncludeRecursive" />
-      <e p="car-parts-shop/node_modules/vue-loader" t="IncludeRecursive" />
-      <e p="car-parts-shop/node_modules/vue-template-compiler" t="IncludeRecursive" />
-      <e p="car-parts-shop/node_modules/webpack-chain" t="IncludeRecursive" />
+      <e p="car-parts-shop\node_modules\@vue\cli-plugin-babel" t="IncludeRecursive" />
+      <e p="car-parts-shop\node_modules\@vue\cli-plugin-eslint" t="IncludeRecursive" />
+      <e p="car-parts-shop\node_modules\@vue\cli-service" t="IncludeRecursive" />
+      <e p="car-parts-shop\node_modules\@vue\component-compiler-utils" t="IncludeRecursive" />
+      <e p="car-parts-shop\node_modules\@vue\eslint-config-airbnb" t="IncludeRecursive" />
+      <e p="car-parts-shop\node_modules\acorn-walk" t="IncludeRecursive" />
+      <e p="car-parts-shop\node_modules\address" t="IncludeRecursive" />
+      <e p="car-parts-shop\node_modules\babel-core" t="IncludeRecursive" />
+      <e p="car-parts-shop\node_modules\babel-eslint" t="IncludeRecursive" />
+      <e p="car-parts-shop\node_modules\babel-loader" t="IncludeRecursive" />
+      <e p="car-parts-shop\node_modules\babel-preset-env" t="IncludeRecursive" />
+      <e p="car-parts-shop\node_modules\bootstrap" t="IncludeRecursive" />
+      <e p="car-parts-shop\node_modules\bootstrap-vue" t="IncludeRecursive" />
+      <e p="car-parts-shop\node_modules\chalk" t="IncludeRecursive" />
+      <e p="car-parts-shop\node_modules\cli-highlight" t="IncludeRecursive" />
+      <e p="car-parts-shop\node_modules\commander" t="IncludeRecursive" />
+      <e p="car-parts-shop\node_modules\core-js" t="IncludeRecursive" />
+      <e p="car-parts-shop\node_modules\dotenv" t="IncludeRecursive" />
+      <e p="car-parts-shop\node_modules\dotenv-expand" t="IncludeRecursive" />
+      <e p="car-parts-shop\node_modules\eslint" t="IncludeRecursive" />
+      <e p="car-parts-shop\node_modules\eslint-plugin-import" t="IncludeRecursive" />
+      <e p="car-parts-shop\node_modules\eslint-plugin-vue" t="IncludeRecursive" />
+      <e p="car-parts-shop\node_modules\javascript-stringify" t="IncludeRecursive" />
+      <e p="car-parts-shop\node_modules\popper.js" t="IncludeRecursive" />
+      <e p="car-parts-shop\node_modules\portal-vue" t="IncludeRecursive" />
+      <e p="car-parts-shop\node_modules\portfinder" t="IncludeRecursive" />
+      <e p="car-parts-shop\node_modules\postcss" t="IncludeRecursive" />
+      <e p="car-parts-shop\node_modules\postcss-selector-parser" t="IncludeRecursive" />
+      <e p="car-parts-shop\node_modules\source-map" t="IncludeRecursive" />
+      <e p="car-parts-shop\node_modules\terser" t="IncludeRecursive" />
+      <e p="car-parts-shop\node_modules\vue" t="IncludeRecursive" />
+      <e p="car-parts-shop\node_modules\vue-functional-data-merge" t="IncludeRecursive" />
+      <e p="car-parts-shop\node_modules\vue-loader" t="IncludeRecursive" />
+      <e p="car-parts-shop\node_modules\vue-router" t="IncludeRecursive" />
+      <e p="car-parts-shop\node_modules\vue-template-compiler" t="IncludeRecursive" />
+      <e p="car-parts-shop\node_modules\webpack-chain" t="IncludeRecursive" />
+      <e p="car-parts-shop-api\node_modules\@types" t="IncludeRecursive" />
+      <e p="car-parts-shop-api\node_modules\body-parser" t="IncludeRecursive" />
+      <e p="car-parts-shop-api\node_modules\eslint" t="IncludeRecursive" />
+      <e p="car-parts-shop-api\node_modules\eslint-config-airbnb-base" t="IncludeRecursive" />
+      <e p="car-parts-shop-api\node_modules\eslint-plugin-import" t="IncludeRecursive" />
+      <e p="car-parts-shop-api\node_modules\eslint-plugin-vue" t="IncludeRecursive" />
+      <e p="car-parts-shop-api\node_modules\express" t="IncludeRecursive" />
+      <e p="car-parts-shop-api\node_modules\mongoose" t="IncludeRecursive" />
+      <e p="car-parts-shop-api\node_modules\morgan" t="IncludeRecursive" />
+      <e p="car-parts-shop-api\node_modules\nodemon" t="IncludeRecursive" />
+      <e p="car-parts-shop-client\node_modules\@types" t="IncludeRecursive">
+        <e p="minimatch" t="IncludeRecursive" />
+        <e p="node" t="IncludeRecursive" />
+      </e>
+      <e p="car-parts-shop-client\node_modules\@vue\cli-plugin-babel" t="IncludeRecursive" />
+      <e p="car-parts-shop-client\node_modules\@vue\cli-plugin-eslint" t="IncludeRecursive" />
+      <e p="car-parts-shop-client\node_modules\@vue\cli-service" t="IncludeRecursive" />
+      <e p="car-parts-shop-client\node_modules\@vue\component-compiler-utils" t="IncludeRecursive" />
+      <e p="car-parts-shop-client\node_modules\@vue\eslint-config-airbnb" t="IncludeRecursive" />
+      <e p="car-parts-shop-client\node_modules\acorn-walk" t="IncludeRecursive" />
+      <e p="car-parts-shop-client\node_modules\address" t="IncludeRecursive" />
+      <e p="car-parts-shop-client\node_modules\babel-eslint" t="IncludeRecursive" />
+      <e p="car-parts-shop-client\node_modules\bootstrap" t="IncludeRecursive" />
+      <e p="car-parts-shop-client\node_modules\bootstrap-vue" t="IncludeRecursive" />
+      <e p="car-parts-shop-client\node_modules\chalk" t="IncludeRecursive" />
+      <e p="car-parts-shop-client\node_modules\cli-highlight" t="IncludeRecursive" />
+      <e p="car-parts-shop-client\node_modules\commander" t="IncludeRecursive" />
+      <e p="car-parts-shop-client\node_modules\core-js" t="IncludeRecursive" />
+      <e p="car-parts-shop-client\node_modules\dotenv" t="IncludeRecursive" />
+      <e p="car-parts-shop-client\node_modules\dotenv-expand" t="IncludeRecursive" />
+      <e p="car-parts-shop-client\node_modules\eslint" t="IncludeRecursive" />
+      <e p="car-parts-shop-client\node_modules\eslint-plugin-import" t="IncludeRecursive" />
+      <e p="car-parts-shop-client\node_modules\eslint-plugin-vue" t="IncludeRecursive" />
+      <e p="car-parts-shop-client\node_modules\javascript-stringify" t="IncludeRecursive" />
+      <e p="car-parts-shop-client\node_modules\popper.js" t="IncludeRecursive" />
+      <e p="car-parts-shop-client\node_modules\portal-vue" t="IncludeRecursive" />
+      <e p="car-parts-shop-client\node_modules\portfinder" t="IncludeRecursive" />
+      <e p="car-parts-shop-client\node_modules\postcss" t="IncludeRecursive" />
+      <e p="car-parts-shop-client\node_modules\postcss-selector-parser" t="IncludeRecursive" />
+      <e p="car-parts-shop-client\node_modules\source-map" t="IncludeRecursive" />
+      <e p="car-parts-shop-client\node_modules\terser" t="IncludeRecursive" />
+      <e p="car-parts-shop-client\node_modules\vue" t="IncludeRecursive" />
+      <e p="car-parts-shop-client\node_modules\vue-functional-data-merge" t="IncludeRecursive" />
+      <e p="car-parts-shop-client\node_modules\vue-loader" t="IncludeRecursive" />
+      <e p="car-parts-shop-client\node_modules\vue-router" t="IncludeRecursive" />
+      <e p="car-parts-shop-client\node_modules\vue-template-compiler" t="IncludeRecursive" />
+      <e p="car-parts-shop-client\node_modules\vuex" t="IncludeRecursive" />
+      <e p="car-parts-shop-client\node_modules\webpack-chain" t="IncludeRecursive" />
     </e>
-    <e p="$USER_HOME$/Library/Caches/Rider2019.3/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/Library/Caches/Rider2019.3/resharper-host/local/Transient/ReSharperHost/v193/SolutionCaches/_.19.00" t="ExcludeRecursive" />
   </component>
 </project>

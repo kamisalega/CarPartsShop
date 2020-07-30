@@ -28,22 +28,45 @@
       </label>
       <label>
         <p class="label-txt">Hasło</p>
-        <input id="InputPassword" type="password" class="input">
+        <input
+          id="InputPassword"
+          type="password"
+          class="input"
+        >
         <div class="line-box">
           <div class="line" />
         </div>
       </label>
       <label>
         <p class="label-txt">Powtórz Hasło</p>
-        <input id="InputPasswordAgain" type="password" class="input">
+        <input
+          id="InputPasswordAgain"
+          type="password"
+          class="input"
+        >
         <div class="line-box">
           <div class="line" />
         </div>
       </label>
-      <button class="mr-sm-2" type="submit">Zarejestruj</button>
-      <button class="mr-sm-2" type="reset">Resetuj</button>
+      <button
+        class="mr-sm-2"
+        type="submit"
+      >
+        Zarejestruj
+      </button>
+      <button
+        class="mr-sm-2"
+        type="reset"
+      >
+        Resetuj
+      </button>
       <router-link to="/">
-        <button class="mr-sm-2" type="button">Wróć</button>
+        <button
+          class="mr-sm-2"
+          type="button"
+        >
+          Wróć
+        </button>
       </router-link>
     </form>
   </div>
