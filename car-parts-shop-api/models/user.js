@@ -8,7 +8,8 @@ const userSchema = new Schema({
   email: { type: String, required: true },
   password: { type: String, required: true },
   isActive: { type: Boolean, default: true },
-  createOn: { type: Date, default: Date.now }
+  createOn: { type: Date, default: Date.now },
+  isAdmin: {type: Boolean, default: false}
 });
 
 const User = mongoose.model('User', userSchema);

@@ -1,26 +1,28 @@
 <template>
-  <div class="navigationBar">
     <div class="pos-f-t">
       <nav class="navbar-header navbar navbar-dark bg-dark">
         <div>
-         <router-link
-            to="/"
-            class="nav-link-header float-left navbar-brand"
-          >
+          <router-link to="/" class="nav-link-header float-left navbar-brand">
             Home
           </router-link>
-          <router-link
-            to="/Login"
-            class="nav-link-header float-left nav-link"
-          >
+          <router-link to="/" v-if="isLoggedIn" class="nav-link-header float-left nav-link">
+            Witaj {{firstName}}
+          </router-link>
+          <router-link to="/Login" v-if="!isLoggedIn" class="nav-link-header float-left nav-link">
             Zaloguj
           </router-link>
         </div>
-        <router-link
-            to="/AdminPanel"
-            class="nav-link-header float-left nav-link">
-            AdminPanel
-          </router-link>
+
+        <router-link v-if="!isAdmin"
+          to="/AdminPanel"
+          class="nav-link-header float-left nav-link" hidden>
+          AdminPanel
+        </router-link>
+        <router-link v-if="isAdmin"
+                     to="/AdminPanel"
+                     class="nav-link-header float-left nav-link" >
+          AdminPanel
+        </router-link>
         <form class="form-inline">
           <router-link to="/Basket">
             <button
@@ -65,25 +67,52 @@
               </svg>
             </button>
           </router-link>
-          <button
-            class="btn btn-outline-success my-2 my-sm-0"
-            type="submit"
-          >
+          <button v-on:click="logout" class="btn btn-outline-success my-2 my-sm-0" type="submit">
             Wyloguj
           </button>
         </form>
       </nav>
     </div>
-  </div>
 </template>
 
 <script>
 export default {
   name: 'NavigationBar',
+  computed: {
+    isLoggedIn() {
+      return this.$store.getters.isLoggedIn;
+    },
+    loginError() {
+      return this.$store.getters.loginError;
+    },
+    firstName() {
+      return this.$store.getters.firstName;
+    },
+    isAdmin() {
+      return this.$store.getters.isAdmin;
+    },
+  },
   data() {
     return {
       msga: 'sprawdzenie',
     };
   },
+  methods: {
+    logout() {
+      const payload = {
+        isLoggedIn: false,
+        email: '',
+        last: '',
+        userId: '',
+      };
+      this.$store.dispatch('loginOut', payload)
+        .then(() => {
+          if (!this.isLoggedIn) {
+            this.$router.push({ path: '/' });
+          }
+        });
+    },
+  },
 };
+
 </script>

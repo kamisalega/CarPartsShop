@@ -1,20 +1,27 @@
 ﻿<template>
   <div class="container">
-      <product-card :carParts="availableParts.carParts"></product-card>
+      <product-card :carParts="availableParts.parts"></product-card>
   </div>
 </template>
 
 <script>
 import ProductCard from './ProductCard.vue';
-import availableParts from '../data/parts';
 
 export default {
   name: 'ProductContainer',
   components: { 'product-card': ProductCard },
+  created() {
+    this.$store.dispatch('getParts');
+  },
   data() {
     return {
-      availableParts,
     };
+  },
+  computed: {
+    availableParts() {
+      return this.$store.state.carParts;
+    },
+
   },
   methods: {
     selectNextHead() {
@@ -29,5 +36,6 @@ export default {
     border: 1px solid #ccc !important;
     padding: 0.1em 16px;
     border-radius: 16px;
+    margin-top: 4em;
   }
 </style>

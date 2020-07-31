@@ -1,7 +1,5 @@
 ﻿<template>
-  <main>
-    <ProductContainer/>
-  </main>
+  <ProductContainer/>
 </template>
 
 <script>

@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-      <router-view />
-    <NavigationBar/>
+      <NavigationBar/>
+      <router-view/>
   </div>
 </template>
 
@@ -21,6 +21,7 @@ export default {
     background: linear-gradient(to bottom, #555, #999);
     background-attachment: fixed;
   }
+
   #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
   }

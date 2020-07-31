@@ -5,9 +5,7 @@
     <form class="register-form ">
       <label>
         <p class="label-txt">Adres email</p>
-        <input
-          id="InputEmail"
-          type="email"
+        <input id="InputEmail" type="email" v-model="user.email"
           class="input"
           aria-describedby="emailHelp"
         >
@@ -16,11 +14,24 @@
         </div>
       </label>
       <label>
-        <p class="label-txt">Nazwa użytkownika</p>
+        <p class="label-txt">Imię</p>
         <input
-          id="InputUsername"
-          type="text"
+          id="InputFirstName"
+          v-bind:type="text"
           class="input"
+          v-model="user.first"
+        >
+        <div class="line-box">
+          <div class="line" />
+        </div>
+      </label>
+      <label>
+        <p class="label-txt">Nazwisko</p>
+        <input
+          id="InputLastName"
+          v-bind:type="text"
+          class="input"
+          v-model="user.last"
         >
         <div class="line-box">
           <div class="line" />
@@ -30,7 +41,8 @@
         <p class="label-txt">Hasło</p>
         <input
           id="InputPassword"
-          type="password"
+          v-bind:type="'password'"
+          v-model="user.password"
           class="input"
         >
         <div class="line-box">
@@ -41,7 +53,8 @@
         <p class="label-txt">Powtórz Hasło</p>
         <input
           id="InputPasswordAgain"
-          type="password"
+          v-bind:type="'password'"
+          v-model="passwordTwo"
           class="input"
         >
         <div class="line-box">
@@ -51,6 +64,7 @@
       <button
         class="mr-sm-2"
         type="submit"
+        v-on:click="register"
       >
         Zarejestruj
       </button>
@@ -73,12 +87,31 @@
 </template>
 
 <script>
+
+
 export default {
   name: 'Register',
   data() {
     return {
       msg: 'Rejestracja użytkownika',
+      user: {
+        first: '',
+        last: '',
+        email: '',
+        password: '',
+        isActive: true,
+      },
+      passwordTwo: '',
     };
+  },
+  methods: {
+    register() {
+      if (this.user.password === this.passwordTwo) {
+        this.$store.dispatch('createNewUser', this.user).then(() => {
+          this.$router.push({ path: '/' });
+        });
+      }
+    },
   },
 };
 </script>

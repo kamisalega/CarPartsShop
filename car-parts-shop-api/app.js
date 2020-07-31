@@ -10,6 +10,11 @@ mongoose.connect('mongodb://localhost/carPartsApi');
 const db = mongoose.connection;
 
 const port = (process.env.PORT || 3000);
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "YOUR-DOMAIN.TLD"); // update to match the domain you will make the request from
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
 
 app.set('port', port);
 app.use(bodyParser.json());

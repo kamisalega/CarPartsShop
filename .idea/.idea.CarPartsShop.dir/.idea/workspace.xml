@@ -56,11 +56,11 @@
   <component name="ChangeListManager">
     <list default="true" id="3752e804-025c-4f6b-a472-684127d56af7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CarPartsShop.dir/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CarPartsShop.dir/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CarPartsShop.dir/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CarPartsShop.dir/.idea/projectSettingsUpdater.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CarPartsShop.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CarPartsShop.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CarPartsShop.dir/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CarPartsShop.dir/riderModule.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/car-parts-shop-client/src/components/NavigationBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/car-parts-shop-client/src/components/NavigationBar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/car-parts-shop-client/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/car-parts-shop-client/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/car-parts-shop-api/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/car-parts-shop-api/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/car-parts-shop-client/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/car-parts-shop-client/.eslintrc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/car-parts-shop-client/src/components/Register.vue" beforeDir="false" afterPath="$PROJECT_DIR$/car-parts-shop-client/src/components/Register.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/car-parts-shop-client/src/store/modules/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/car-parts-shop-client/src/store/modules/user.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,21 +98,30 @@
         <option value="$PROJECT_DIR$/car-parts-shop1/src/store/index.js" />
         <option value="$PROJECT_DIR$/car-parts-shop1/src/theme/CarPart.vue" />
         <option value="$PROJECT_DIR$/car-parts-shop1/src/theme/ProductBox.vue" />
-        <option value="$PROJECT_DIR$/car-parts-shop-client/.eslintrc.js" />
         <option value="$PROJECT_DIR$/car-parts-shop-client/src/build/CarPartsBuilder.vue" />
         <option value="$PROJECT_DIR$/car-parts-shop-client/public/index.html" />
-        <option value="$PROJECT_DIR$/car-parts-shop-client/src/components/ProductContainer.vue" />
-        <option value="$PROJECT_DIR$/car-parts-shop-client/src/components/ProductCard.vue" />
         <option value="$PROJECT_DIR$/car-parts-shop-client/src/router/index.js" />
-        <option value="$PROJECT_DIR$/car-parts-shop-client/src/components/HomePage.vue" />
         <option value="$PROJECT_DIR$/car-parts-shop-client/src/components/Basket.vue" />
         <option value="$PROJECT_DIR$/car-parts-shop-client/src/components/BasketItem.vue" />
-        <option value="$PROJECT_DIR$/car-parts-shop-client/src/components/Register.vue" />
-        <option value="$PROJECT_DIR$/car-parts-shop-client/src/App.vue" />
-        <option value="$PROJECT_DIR$/car-parts-shop-client/src/store/index.js" />
         <option value="$PROJECT_DIR$/car-parts-shop-client/src/data/parts.js" />
-        <option value="$PROJECT_DIR$/car-parts-shop-client/src/main.js" />
         <option value="$PROJECT_DIR$/car-parts-shop-client/src/components/NavigationBar.vue" />
+        <option value="$PROJECT_DIR$/car-parts-shop-client/src/store/modules/user.cs" />
+        <option value="$PROJECT_DIR$/car-parts-shop-client/src/components/Login.vue" />
+        <option value="$PROJECT_DIR$/car-parts-shop-client/src/store/modules/carParts.js" />
+        <option value="$PROJECT_DIR$/car-parts-shop-client/vue.config.js" />
+        <option value="$PROJECT_DIR$/car-parts-shop-client/src/main.js" />
+        <option value="$PROJECT_DIR$/car-parts-shop-client/src/store/index.js" />
+        <option value="$PROJECT_DIR$/car-parts-shop-client/src/store/modules/carPart.js" />
+        <option value="$PROJECT_DIR$/car-parts-shop-api/models/carPart.js" />
+        <option value="$PROJECT_DIR$/car-parts-shop-client/src/components/ProductContainer.vue" />
+        <option value="$PROJECT_DIR$/car-parts-shop-client/src/components/ProductCard.vue" />
+        <option value="$PROJECT_DIR$/car-parts-shop-client/src/components/HomePage.vue" />
+        <option value="$PROJECT_DIR$/car-parts-shop-client/src/App.vue" />
+        <option value="$PROJECT_DIR$/car-parts-shop-client/src/components/ProductItem.vue" />
+        <option value="$PROJECT_DIR$/car-parts-shop-api/app.js" />
+        <option value="$PROJECT_DIR$/car-parts-shop-client/src/store/modules/user.js" />
+        <option value="$PROJECT_DIR$/car-parts-shop-client/src/components/Register.vue" />
+        <option value="$PROJECT_DIR$/car-parts-shop-client/.eslintrc.js" />
       </list>
     </option>
   </component>
@@ -147,7 +156,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.webOptions" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\JetBrains Rider 2020.1.4\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="SvnConfiguration">
@@ -164,7 +173,7 @@
       <workItem from="1595251705999" duration="66000" />
       <workItem from="1595251793208" duration="318000" />
       <workItem from="1595252184776" duration="6036000" />
-      <workItem from="1596030003772" duration="41127000" />
+      <workItem from="1596030003772" duration="45885000" />
     </task>
     <servers />
   </component>
@@ -190,10 +199,11 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="633" y="300" key="#ESLint" timestamp="1596041094980">
+    <state x="633" y="300" key="#ESLint" timestamp="1596247636379">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="633" y="300" key="#ESLint/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1596041094980" />
+    <state x="633" y="300" key="#ESLint/0.0.1536.824@0.0.1536.824" timestamp="1596247636379" />
     <state x="633" y="275" key="#Notifications" timestamp="1596041091611">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -266,11 +276,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="288" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1595258225983" />
-    <state x="277" y="57" key="SettingsEditor" timestamp="1596078896724">
+    <state x="277" y="57" key="SettingsEditor" timestamp="1596248736221">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1596042028086" />
-    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1596078896724" />
+    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1596248736221" />
     <state x="450" y="145" width="636" height="534" key="find.popup" timestamp="1596039300410">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -279,10 +289,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1596069201212" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1595254868900">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1596250497172">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1595254868900" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1596250497172" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -1,13 +1,13 @@
 ﻿<template>
-   <div>
+   <div v-if="availableParts">
          <div style="margin: 100px;" class="PartItem"
-            v-for="(part, index) in availableParts.carParts" :key="index">
-            <div v-if="part.id==PartId">
+            v-for="(part, index) in availableParts.parts" :key="index">
+            <div v-if="part._id===PartId">
                <b-card>
                   <b-row>
                      <b-col>
                         <b-card
-                        :img-src="part.src" img-alt="Image" img-top></b-card>
+                        :img-src="getImgUrl(part.src)" img-alt="Image" img-top></b-card>
                      </b-col>
                      <b-col>
                         <b-card-body>
@@ -33,22 +33,34 @@
    </div>
 </template>
 <script>
-import availableParts from '../data/parts';
+import { mapActions } from 'vuex';
 
 export default {
   name: 'ProductCard',
+  created() {
+    this.$store.dispatch('getParts');
+  },
   props: {
-    carParts: {
-      type: Array,
-      required: true,
-    },
     PartId: {
       type: String,
       value: 'test',
     },
   },
   data() {
-    return { availableParts, selectedPartIndex: 0 };
+    return { selectedPartIndex: 0 };
+  },
+  computed: {
+    availableParts() {
+      return this.$store.state.carParts;
+    },
+
+  },
+  methods: {
+    ...mapActions('carParts', ['getParts']),
+    getImgUrl(value) {
+      const images = require.context('../data/images', false, /\.jpg$/);
+      return images(`./${value}`);
+    },
   },
 };
 </script>

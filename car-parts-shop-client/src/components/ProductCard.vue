@@ -3,11 +3,11 @@
     <b-card-group deck>
       <div class="card-car-part col-sm-4" v-for="(part, index) in carParts" :key="index">
         <b-card class="b-card-car-part"
-                :img-src="part.src" img-alt="Image" img-top>
+                :img-src="getImgUrl(part.src)" img-alt="Image" img-top>
           <hr/>
           <router-link
           :to="{ name: 'ProductItem',
-          params: {PartId: part.id}
+          params: {PartId: part._id}
           }">
             <h3>{{part.subcategory+' '+part.carBrand+' '+part.carModel}}</h3>
           </router-link>
@@ -18,6 +18,7 @@
 </template>
 
 <script>
+
 export default {
   name: 'ProductCard',
   props: {
@@ -29,6 +30,13 @@ export default {
   data() {
     return { selectedPartIndex: 0 };
   },
+  methods: {
+    getImgUrl(value) {
+      const images = require.context('../data/images', false, /\.jpg$/);
+      return images(`./${value}`);
+    },
+  },
+
 };
 </script>
 
